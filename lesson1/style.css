@@ -1,0 +1,156 @@
+:root{
+    --back-color: #445161;
+    --main-text-color:#333333;
+}
+
+
+#wrapper{
+    background-color: #f5f5f5; 
+    width: 1280px;
+    margin: 0px auto; 
+    font-family: Roboto;    
+}
+
+.clear {clear: both;}
+
+.padding {
+    padding: 0px 50px;
+}
+
+header {
+height: 323px;
+background-color: var(--back-color);
+
+}
+
+.header_content{
+    padding-top: 50px;
+}
+
+.product{
+    float: left;
+}
+
+ul>li{
+font-size: 20px;
+line-height: 36px;
+font-weight: 400;
+color: #ffffff;
+}
+
+ul{
+    list-style-image: url(img/check_icon.png);
+}
+
+.shape9{
+    width: 469px;
+    height: 214px;
+    background-color: #ffffff;
+    float: right;
+}
+
+
+.about{
+    height: 2863px;
+    padding-top: 50px;
+}
+
+.about_text{
+    float: left;
+    width: 653px;
+}
+
+.text{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: var(--main-text-color);
+}
+
+.about_video{
+    width: 430px;
+height: 245px;
+background-color: var(--back-color);
+float: right;
+}
+
+
+.contacts{
+
+    height:509px;
+    background-color: var(--back-color);
+
+}
+
+.buy{
+    height: 656px;
+    background-color: #ffffff;
+}
+
+h1{
+
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h2{
+    
+font-size: 30px;
+line-height: 36px;
+font-weight: 400;
+color: var(--back-color);
+text-align: center; 
+padding-bottom: 30px;
+margin: 0px;
+}
+
+h3{
+    
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center; 
+    padding-top: 17px;
+}
+
+.standart{
+    width: 300px;
+    height: 306px;
+    background-color: var(--back-color);
+    
+}
+
+.premium{
+    width: 300px;
+    height: 404px;
+    background-color: var(--back-color);
+}
+
+.lux{
+    width: 300px;
+    height: 499px;
+    background-color: var(--back-color);
+}
+
+
+.scrinshots{
+    height: 487px;
+    
+}
+
+.scrin_detail  {
+    float: left;
+    width: 151px;
+}
+
+.text{
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: #333333;
+}
