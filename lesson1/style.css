@@ -2,6 +2,7 @@
 :root{
     --back-color: #445161;
     --main-text-color:#333333;
+    --text-size:20px;
 }
 
 @font-face{
@@ -12,26 +13,35 @@
 body{
     margin: 0px;
     font-family: Arial, sans-serif;
+    background-color: #ccc;
 }
 
-#wrapper{
+.container{
     background-color: #f5f5f5; 
-    width: 1280px;
-    margin: 0px auto; 
+  /*  min-width: 570px; */
+    margin: 0px auto;
+    padding: 0px; 
 }
 
-.clear:after {
+.clear:after{
     content: "";
     display: block;
     clear: both;
     }
 
-.padding {
+.padding{
     padding: 50px;
 }
 
-.pageHeader {
+@media all and (min-width: 0) and (max-width: 767px) {
+    .padding {
+      padding: 15px;
+    }
+  }
+
+.pageHeader{
     background-color: var(--back-color);
+    width: 100%;
 }
 
 .headerList li{
@@ -40,19 +50,27 @@ body{
     font-weight: 400;
     color: #ffffff;
 }
+@media all and (min-width: 0) and (max-width: 767px) {
+    .headerList li {
+        font-size: 10px;
+        line-height: 30px;
+    }
+  }
 
 .headerList{
     list-style-image: url(img/check_icon.png);
-    float: left;
+}
+
+.productImg{
+    width: 100%;
 }
 
 .dignityAndPluses .plusesList{
     padding: 0px;
 }
 
-.dignityAndPluses .plusesList li{
-    width: calc(50% - 8px);
-    list-style: none;
+.dignityAndPluses .plus{
+  /*  width: calc(50% - 8px); */
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -63,36 +81,46 @@ body{
     padding-left: 40px;
     box-sizing: border-box;
     background: url(img/list_icon.png) no-repeat left 5px;
-
 }
-.dignityAndPluses .plusesList li:nth-child(odd) {
+
+.dignityAndPluses .plusesList .plus:nth-child(odd){
     margin-right: 8px;
 }
 
-.dignityAndPluses .plusesList li:nth-child(even) {
+.dignityAndPluses .plusesList .plus:nth-child(even){
     margin-left: 8px;
 }
 
-.dignityAndPluses .plusesList li:nth-child(-n+2){
-    margin-top: 0px;
-}
+
+@media (min-width: 992px) {
+    .dignityAndPluses .plusesList .col-md-6:nth-child(-n+2){
+        margin-top: 0px;
+    }
+  }
+
+@media all and (min-width: 0) and (max-width: 991px) {
+    .dignityAndPluses .plus {
+        margin-top: 15px;
+    }
+  }
+
+  @media all and (min-width: 0) and (max-width: 991px) {
+    .dignityAndPluses .plusesList .col-md-6:first-child .plus{
+      margin-top: 0px;
+    }
+  }
+
 
 .about{
    background-color: #ffffff;
 }
 
-.aboutProduct{
-    float: left;
-}
-
 .aboutDesc{
-    float: left;
-    width: 653px;
-    padding-bottom: 20px;
+    margin: 0px 0px 20px 0px;
 }
 
 .about div:last-child{
-    padding-bottom: 0px;
+    margin: 0px;
 }
 
 .text{
@@ -109,8 +137,8 @@ body{
 }
 
 .buy{
-    height: 656px;
     background-color: #ffffff;
+    position: relative;
 }
 
 .productName{
@@ -119,13 +147,13 @@ body{
     font-weight: 400;
     color: #ffffff;
     margin: 0px;
-    float: left;
+    /*float: left;*/
 }
-
-.productImg{
-    float: right
-}
-
+@media all and (min-width: 0) and (max-width: 767px) {
+    .productName {
+        font-size: 50px;
+    }
+  }
 
 .scrinshots{
     background-color: #ffffff;
@@ -134,7 +162,14 @@ body{
 .productscrin{
     float: left;
     padding-right: 15px;
+    width: 50%;
 }
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .productscrin {
+        float: none;
+    }
+  }
 
 .sectionHeader{
     font-size: 30px;
@@ -142,8 +177,8 @@ body{
     font-weight: 400;
     color: var(--back-color);
     text-align: center; 
-    padding-bottom: 30px;
-    margin: 0px;
+   
+    margin: 0px 0px 30px 0px;
 }
 
 .articleHeader{
@@ -156,14 +191,22 @@ body{
 }
 
 .scrinshotunit {
-    width: calc(50% - 8px);
-    float: left;
+ /*   width: calc(50% - 8px); 
+    float: left; */
     margin-top: 30px;
+    display: inline-block;
 }
 
 .scrinshotunit:nth-child(-n+3){
     margin-top: 0px;
 }
+
+
+@media all and (min-width: 0) and (max-width: 991px) {
+    .scrinshots .scrinshotunit{
+        margin-top: 15px;
+    }
+  }
 
 .scrinshotunit:nth-child(even){
     padding-right: 8px;
@@ -173,14 +216,23 @@ body{
     padding-left: 8px;
 }
 
-.reviewunit{
-    width: calc(50% - 30px);
-    float: left;
+@media all and (min-width: 0) and (max-width: 991px) {
+.scrinshotunit:nth-child(odd){
+    padding-left: 0px;
+}
 }
 
 .reviewpic{
     border-radius: 40px;
-    float: left;
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+@media all and (min-width: 0) and (max-width: 991px) {
+.reviewpic{
+    width: 20%;
+}
 }
 
 .review{
@@ -191,9 +243,15 @@ body{
     font-style: italic;
     color: #333333;
     margin: 0px;
-    margin-left: calc(75px + 30px);
     padding: 16px;
     position: relative;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 0) and (max-width: 991px){
+    .review{
+        margin: 30px 0px;
+    }
 }
 
 .review::before{
@@ -205,6 +263,13 @@ body{
     left: -10px;
     top: 27px;
     transform: rotate(45deg);
+}
+
+@media all and (min-width: 0) and (max-width: 991px){
+    .review::before{
+        left: calc(50% - 10px);
+        top: -10px;
+    }
 }
 
 .reviewunit:nth-child(odd){
@@ -234,17 +299,33 @@ body{
 }
 
 .buyunit{
-    width: 990px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     margin: 0px auto;
+}
+
+.buy .buyunit {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .buyunittype{
     border-radius: 10px;
-    width: 300px;
     background-color: var(--back-color);
+}
+
+@media all and (min-width: 0) and (max-width: 991px) {
+    .buy .buyunit .buyunittype:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+
+@media (min-width: 992px){
+    .buy .buyunit {
+     flex-direction: row;
+     align-items: flex-end;
+    justify-content: space-between;
+    }
 }
 
 .buyHeader{
@@ -284,6 +365,7 @@ body{
     color: #445161;
     height: 40px;
     border-radius: 10px;
+    border: none;
     margin: 20px 0px 20px 20px;
 }
 
@@ -306,24 +388,23 @@ footer{
 
 .contactscontent{
     margin: 0px auto;
-    width: 785px;
-}
-
-form{
-    float: left;
-    width: 50%;
 }
 
 .contactsform >div>input{
     width: 100%;
     padding: 14px 10px 14px 10px;
     border-radius: 5px;
+    border: none;
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #445162;
 }
+
+/* .contactsform >div>input:invalid {
+    background-color: #ea8383;
+} */
 
 .contactsform >div>textarea{
     border-radius: 5px;
@@ -334,11 +415,12 @@ form{
     line-height: 24px;
     font-weight: 400;
     color: #445162;
+    resize: none;
 }
 
-.contactlist{
-    float: right;
-}
+/* .contactsform >div>textarea:invalid {
+    background-color: #ea8383;
+} */
 
 .sendbutton {
     display: block;
@@ -351,11 +433,12 @@ form{
     width: 140px;
     height: 40px;
     border-radius: 10px;
+    border: none;
     margin: 0px auto;   
 }
 
 .sendbutton:hover{
-    background-color: #f5adad;
+    background-color: #9cbcf7;
 }
 
 .contactlist div{
@@ -406,3 +489,74 @@ form{
     color: #445162;
 }
 
+.startvideo {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.wrap{
+    width: 50%;
+
+}
+.startpagecontent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startpagetext{
+    font-size: 90px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #15d5e2;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 4px 2px 9px #7cacde;
+}
+
+@media (max-width: 767px){
+    .startpagetext {
+        font-size: 40px;
+    }
+}
+
+.showbutton {
+	text-transform: uppercase;
+    margin-top: 40px;
+    box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:20px 40px;
+	text-decoration:none;
+	text-shadow:0px 5px 0px #ffee66;
+}
+.showbutton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.showbutton:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width: 767px){
+    .showbutton {
+        font-size: 20px;
+    }
+}
