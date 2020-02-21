@@ -1,0 +1,58 @@
+
+body{
+    font-family: Motserrat, Arial, Helvetica;
+}
+
+.container{
+    max-width: 1597px;
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+.banner{
+    height: 640px;
+    background: url(../assets/background_banner.jpg) no-repeat;
+
+}
+
+.banner_content{
+
+}
+
+.banner_header{
+    font-size: 47.7px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #474747;
+    text-align: center;
+}
+
+.banner_text{
+    font-family: OpenSans;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #3f3f3f;
+    text-align: center;
+}
+
+.button_readmore{
+    /*стили для кнопки*/ 
+    box-shadow: -4px 11px 40px 0px rgba(0,0,0,0.2);
+    background-color: #1a9bdc;
+    border-radius: 15.0px;
+    padding: 15px;
+    width: auto;
+
+    /* стили для текста кнопки*/
+    font-family: Lato;
+    font-size: 18.5px;
+    line-height: 1.2;
+    font-weight: 700;=
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: center;
+}
+
