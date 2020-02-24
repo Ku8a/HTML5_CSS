@@ -1,36 +1,36 @@
 @font-face{
     font-family: 'OpenSansBold';
-    src: url(/fonts/Open_Sans/OpenSans-Bold.ttf);
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
 }
 
 @font-face{
     font-family: 'OpenSansMedium';
-    src: url(/fonts/Open_Sans/OpenSans-Regular.ttf);
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
 
 @font-face{
     font-family: 'MontserratBold';
-    src: url(/fonts/Montserrat/Montserrat-Bold.ttf);
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
 @font-face{
     font-family: 'MontserratMedium';
-    src: url(/fonts/Montserrat/Montserrat-Medium.ttf);
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 
 @font-face{
     font-family: 'LatoBold';
-    src: url(/fonts/Lato/Lato-Regular.ttf);
+    src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 
 @font-face{
     font-family: 'NexaBold';
-    src: url(/fonts/nexa/Nexa\ Bold.otf);
+    src: url(../fonts/nexa/Nexa\ Bold.otf);
 }
 
 @font-face{
     font-family: 'NexaLight';
-    src: url(/fonts/nexa/Nexa\ Light.otf);
+    src: url(../fonts/nexa/Nexa\ Light.otf);
 }
 
 .container{
@@ -294,7 +294,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background: url(/assets/why_us_pi5.jpg) no-repeat center;
+    background: url(../assets/why_us_pi5.jpg) no-repeat center;
 }
 
 .features{
@@ -405,7 +405,7 @@
 }
 
 .heart_tret_button{
-    background: url(/assets/icon.png) no-repeat 10px center, #e2e2e2;
+    background: url(../assets/icon.png) no-repeat 10px center, #e2e2e2;
     border-radius: 45.0px;
     padding-left: 60px;
     padding-top: 20px;
@@ -618,7 +618,7 @@
     padding-left: 10px;
     text-align: left;
     list-style-type: none;
-    list-style-image: url(/assets/icon1.png);  
+    list-style-image: url(../assets/icon1.png);  
 }
 
 .footer_socialicon{
